@@ -1,7 +1,6 @@
 from pypdf import PdfReader
 from transformers import pipeline
 
-# Extract text
 def extract_text(pdf_path):
     reader = PdfReader(pdf_path)
     text = ""
@@ -12,7 +11,6 @@ def extract_text(pdf_path):
 
     return text
 
-# Chunk text
 def chunk_text(text, chunk_size=150):
     words = text.split()
     chunks = []
@@ -23,14 +21,12 @@ def chunk_text(text, chunk_size=150):
 
     return chunks
 
-# Load model
 def load_model():
     return pipeline(
         "zero-shot-classification",
         model="facebook/bart-large-mnli"
     )
 
-# Search chunks
 def search_chunks(chunks, query, classifier, threshold=0.8):
     results = []
 
@@ -44,7 +40,6 @@ def search_chunks(chunks, query, classifier, threshold=0.8):
     results.sort(key=lambda x: x[1], reverse=True)
     return results
 
-# Main function
 def main():
     pdf_path = input("Enter PDF path: ")
     query = input("Enter your query: ")
