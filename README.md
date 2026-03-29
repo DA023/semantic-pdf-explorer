@@ -62,9 +62,9 @@ Total relevant chunks found: 1
 Result 1 | Score: 1.00
 ADVAIT | Focus Groups/Tracks Overview This document outlines the assignments for different tracks in ADVAIT. Each member is expected to choose a track and complete the assigned tasks within the given deadline. Guidelines ● Students can apply for multiple tracks, but they'll have to work properly in all the selected one's, workload might increase but so will the real learning. ● If the first non zero digit of your enrollment number is even, do Assignment 1. ● If the first non zero digit of your enrollment number is odd, do Assignment 2. ● You might be asked to explain implementation so be careful while vibe coding your way through the assignment or plagiarising someone else’s work. ● Refer to the resources section at the end of this document for help. Mandatory Submission Requirements (for all tracks): ● GitHub Repository ● README should include approach, difficulties faced, resolutions of those difficulties,
 ```
-## Screenshot
+## 🖼️ Screenshot
 
-![Sample Run](output.png)
+![Sample Run](assets/output.png)
 ---
 
 ## Difficulties Faced
