@@ -44,7 +44,12 @@ def main():
     pdf_path = input("Enter PDF path: ")
     query = input("Enter your query: ")
 
-    text = extract_text(pdf_path)
+    try:
+        text = extract_text(pdf_path)
+    except Exception:
+        print("Error reading PDF file.")
+        return
+    
     chunks = chunk_text(text)
 
     classifier = load_model()

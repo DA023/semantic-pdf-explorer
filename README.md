@@ -37,11 +37,11 @@ The system follows a structured pipeline:
 
 ---
 
-## 🔄 Pipeline Explanation
+## Pipeline Explanation
 
 PDF → Text Extraction → Chunking → Zero-Shot Classification → Filtering (≥ 0.8) → Ranked Results
 
-Zero-shot classification is used so that the model can match queries with text **without any task-specific training**.
+Zero-shot classification allows the model to match queries with text without any additional training. **without any task-specific training**.
 
 ---
 
@@ -121,12 +121,11 @@ python pdf_explorer.py
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
-* Convert into a web-based application (React/Streamlit)
-* Use embeddings + vector search (FAISS) for faster retrieval
-* Support multiple PDFs
-* Improve ranking with hybrid search techniques
+- Convert into a web application  
+- Use embeddings + vector search (FAISS)  
+- Support multiple PDFs
 
 ---
 
