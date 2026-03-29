@@ -1,19 +1,19 @@
-# Semantic PDF Explorer 🚀
+# Semantic PDF Explorer
 
-## 📌 Objective
+## Objective
 
 Build an AI-powered tool to search and retrieve relevant information from PDF documents using **Hugging Face Transformers**.
 
 ---
 
-## 🧠 Overview
+## Overview
 
 Semantic PDF Explorer is a command-line tool that allows users to query a PDF and retrieve the most relevant sections based on meaning, not just keywords.
 It leverages **zero-shot classification** to perform semantic matching between user queries and document content.
 
 ---
 
-## ⚙️ Approach
+## Approach
 
 The system follows a structured pipeline:
 
@@ -45,7 +45,7 @@ Zero-shot classification allows the model to match queries with text without any
 
 ---
 
-## 🧪 Sample Usage
+## Sample Usage
 
 ### Input
 
@@ -62,10 +62,12 @@ Total relevant chunks found: 1
 Result 1 | Score: 1.00
 ADVAIT | Focus Groups/Tracks Overview This document outlines the assignments for different tracks in ADVAIT. Each member is expected to choose a track and complete the assigned tasks within the given deadline. Guidelines ● Students can apply for multiple tracks, but they'll have to work properly in all the selected one's, workload might increase but so will the real learning. ● If the first non zero digit of your enrollment number is even, do Assignment 1. ● If the first non zero digit of your enrollment number is odd, do Assignment 2. ● You might be asked to explain implementation so be careful while vibe coding your way through the assignment or plagiarising someone else’s work. ● Refer to the resources section at the end of this document for help. Mandatory Submission Requirements (for all tracks): ● GitHub Repository ● README should include approach, difficulties faced, resolutions of those difficulties,
 ```
+## Screenshot
 
+![Sample Run](output.png)
 ---
 
-## ⚠️ Difficulties Faced
+## Difficulties Faced
 
 * Extracting clean and consistent text from PDFs
 * Choosing optimal chunk size for better model performance
@@ -74,7 +76,7 @@ ADVAIT | Focus Groups/Tracks Overview This document outlines the assignments for
 
 ---
 
-## 🛠️ Solutions Implemented
+## Solutions Implemented
 
 * Ignored empty or invalid text during extraction
 * Used chunk size of ~150 words for balanced context
@@ -83,7 +85,7 @@ ADVAIT | Focus Groups/Tracks Overview This document outlines the assignments for
 
 ---
 
-## 📚 Learnings
+## Learnings
 
 * Practical usage of **Hugging Face Transformers**
 * Understanding of **zero-shot classification**
@@ -92,7 +94,7 @@ ADVAIT | Focus Groups/Tracks Overview This document outlines the assignments for
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Install dependencies
 
@@ -113,11 +115,11 @@ python pdf_explorer.py
 
 ---
 
-## 📌 Constraints Satisfied
+## Constraints Satisfied
 
-* ✅ Used Hugging Face Transformers
-* ✅ Implemented zero-shot classification
-* ✅ CLI/script-based solution
+*  Used Hugging Face Transformers
+*  Implemented zero-shot classification
+*  CLI/script-based solution
 
 ---
 
@@ -129,7 +131,7 @@ python pdf_explorer.py
 
 ---
 
-## 📝 Note
+## Note
 
 This project works with **any PDF file**.
 Users can provide their own PDF path at runtime.
